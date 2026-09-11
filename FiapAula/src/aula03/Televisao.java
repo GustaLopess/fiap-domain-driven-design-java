@@ -5,9 +5,11 @@ package aula03;
 public class Televisao {
 
     // Atributos da classe televisão
-   private int canal = 1;
-   private int volume = 10;
-    private boolean ligado = false;
+   private int canal;
+   private int volume ;
+    private boolean ligado ;
+    private String marca;
+
 
 
 //    Metodos da classe televisão
@@ -24,6 +26,14 @@ public class Televisao {
 
     public boolean getLigado() {
         return ligado;
+    }
+
+    public String getMarca(){
+        return marca;
+    }
+
+    public void setMarca(String marca){
+        this.marca = marca;
     }
 
     public void setCanal(int canal) {

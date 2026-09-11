@@ -17,6 +17,7 @@ public class TelevisaoTeste {
         tv.setCanal(30);
         tv.setVolume(1000);
         tv.setLigado(true);
+        tv.setMarca("LG");
 
         System.out.println("\n-------------------------------------");
 
@@ -27,6 +28,7 @@ public class TelevisaoTeste {
         System.out.println("Canal: " + tv.getCanal());
         System.out.println("Volume: " + tv.getVolume());
         System.out.println("Ligado: " + tv.getLigado());
+        System.out.println("Marca: " + tv.getMarca());
 
     }
 }
