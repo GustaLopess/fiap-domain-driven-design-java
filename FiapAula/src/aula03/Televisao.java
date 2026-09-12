@@ -35,7 +35,13 @@ public class Televisao {
     }
 
     public void setCanal(int canal) {
-        this.canal = canal;
+        if(canal >= 0 && canal<=500){
+            this.canal = canal;
+            System.out.println("Canal Alterado para: " + this.canal);
+        }else {
+            System.out.println("[Erro] Canal Invalido!");
+        }
+
     }
 
     public void setVolume(int volume) {
