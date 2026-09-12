@@ -8,15 +8,17 @@ public class TelevisaoTeste {
         // Instanciando Objeto - Tipo = Televisão.
         Televisao tv = new Televisao();
 
+        System.out.println("\nObjeto: " + tv);
+
         System.out.println("Canal: " + tv.getCanal());
         System.out.println("Volume: " + tv.getVolume());
         System.out.println("Ligado: " + tv.getLigado());
 
         // Alterando os dados do objeto tv de forma direta
 
-        tv.setCanal(30);
+        tv.setCanal(-5);
         tv.setVolume(1000);
-        tv.setLigado(true);
+        tv.setLigado(false);
         tv.setMarca("LG");
 
         System.out.println("\n-------------------------------------");
@@ -29,6 +31,8 @@ public class TelevisaoTeste {
         System.out.println("Volume: " + tv.getVolume());
         System.out.println("Ligado: " + tv.getLigado());
         System.out.println("Marca: " + tv.getMarca());
+
+        tv.ligar();
 
     }
 }

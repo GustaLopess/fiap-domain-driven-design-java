@@ -5,15 +5,13 @@ package aula03;
 public class Televisao {
 
     // Atributos da classe televisão
-   private int canal;
-   private int volume ;
+    private int canal;
+    private int volume ;
     private boolean ligado ;
     private String marca;
 
 
-
 //    Metodos da classe televisão
-
 
     // Metodos de acesso - Acessores GETTERS
     public int getCanal() {
@@ -37,7 +35,13 @@ public class Televisao {
     }
 
     public void setCanal(int canal) {
-        this.canal = canal;
+        if(canal >= 0 && canal<=500){
+            this.canal = canal;
+            System.out.println("Canal Alterado para: " + this.canal);
+        }else {
+            System.out.println("[Erro] Canal Invalido!");
+        }
+
     }
 
     public void setVolume(int volume) {
@@ -46,5 +50,16 @@ public class Televisao {
 
     public void setLigado(boolean ligado) {
         this.ligado = ligado;
+    }
+
+    public void ligar(){
+
+        this.ligado = !this.ligado;
+
+        if(ligado){
+            System.out.println(">>>  Tv Ligada!");
+        }else{
+            System.out.println(">>> Tv Desligada!");
+        }
     }
 }
