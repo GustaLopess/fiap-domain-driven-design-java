@@ -32,7 +32,10 @@ public class TelevisaoTeste {
         System.out.println("Ligado: " + tv.getLigado());
         System.out.println("Marca: " + tv.getMarca());
 
+        System.out.println("Ligando a tv");
         tv.ligar();
+
+        tv.setCanal(100);
 
     }
 }
