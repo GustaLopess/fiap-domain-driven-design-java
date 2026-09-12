@@ -5,15 +5,13 @@ package aula03;
 public class Televisao {
 
     // Atributos da classe televisão
-   private int canal;
-   private int volume ;
+    private int canal;
+    private int volume ;
     private boolean ligado ;
     private String marca;
 
 
-
 //    Metodos da classe televisão
-
 
     // Metodos de acesso - Acessores GETTERS
     public int getCanal() {

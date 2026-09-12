@@ -8,6 +8,8 @@ public class TelevisaoTeste {
         // Instanciando Objeto - Tipo = Televisão.
         Televisao tv = new Televisao();
 
+        System.out.println("Objeto: " + tv);
+
         System.out.println("Canal: " + tv.getCanal());
         System.out.println("Volume: " + tv.getVolume());
         System.out.println("Ligado: " + tv.getLigado());
