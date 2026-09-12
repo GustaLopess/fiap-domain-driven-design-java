@@ -51,4 +51,15 @@ public class Televisao {
     public void setLigado(boolean ligado) {
         this.ligado = ligado;
     }
+
+    public void ligar(){
+
+        this.ligado = !this.ligado;
+
+        if(ligado){
+            System.out.println(">>>  Tv Ligada!");
+        }else{
+            System.out.println(">>> Tv Desligada!");
+        }
+    }
 }
